@@ -1,12 +1,12 @@
 # Timer Utility
 
-`Timer` primarly functions as a timer and can also be used to lerp values if you want to. It utilizes the observer pattern intensively for easily managing behaviours.
+Timer Utility revolves around the `Timer` class which primarly functions as a timer and can also be used to lerp values if you want to. It utilizes the observer pattern intensively for easily managing behaviours.
 
 ## Features
 
-- **Flexible Update Types:** Choose between Update, FixedUpdate, LateUpdate, and even custom time intervals for your `Timer`s update method with Manual updates.
+- **Flexible Update Types:** Choose between Update, FixedUpdate, LateUpdate, and even custom time intervals for your timers' update methods with Manual updates.
 - **Event System:** Set up event callbacks for `OnStart`, `OnUpdate`, `OnComplete`, `OnStop`, `OnKill`, `OnPause`, and `OnUnpause`.
-- **Filtering:** Access and filter through all your timers easily with the `TimerRunner.AliveTimers` list and `Name` property on the `Timer`s.
+- **Filtering:** Access and filter through all your timers easily with the `TimerRunner.AliveTimers` list and `Name` property on the timers.
 - **Tweening:** You can tween/lerp values with provided methods in the `TimerUtilities.EasingFunctions` class.
 - **Efficient:** The utility is designed with performance and memory in mind; it does not use coroutines internally.
 - **Fully Documented:** All code you can access is XML documented clearly and accurately.
@@ -70,3 +70,7 @@ bool notStartedYet1 = timer.IsAliveAndNotNull(); // Extension call for ease of u
 // Furthermore
 [SerializeField] private Timer _myTimer; // Serialize a timer to show it in the inspector, really useful for debugging. You can also just make it public too, of course.
 ```
+
+## Future Plans
+- **Looping Support:** Timers will be able to loop instead of mostly being one time usables.
+- **Editor Support:** Timers will also be able to run on outside of play mode.
