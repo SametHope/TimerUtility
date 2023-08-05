@@ -197,7 +197,7 @@ namespace SametHope.TimerUtility
         {
             if (!IsAlive)
             {
-                Debug.LogWarning("You can kill a timer that is not alive.");
+                Debug.LogWarning("You can not kill a timer that is not alive.");
                 return;
             }
 
