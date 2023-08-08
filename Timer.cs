@@ -52,8 +52,7 @@ namespace SametHope.TimerUtility
 
         /// <summary>
         /// Has this instance started and yet to be killed?
-        /// <para>Use <see cref="Pause"/> and <see cref="Unpause"/> to set.</para>
-        /// <para>Note: Use Timer.
+        /// <para>This is true after <see cref="Start"/> has been called and <see cref="OnKill"/> is yet to be triggered.</para>
         /// </summary>
         [field: SerializeField, TimerEditorReadOnly] public bool IsAlive { get; private set; }
 
